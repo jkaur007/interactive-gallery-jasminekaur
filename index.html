@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Interactive Gallery</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Image Gallery</title>
+    
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="gallery" id="gallery-container">
-    <!-- Gallery images will be dynamically added here -->
-  </div>
+  <h1 id="heading"> Intractive image gallery </h1> 
+  <p>By clicking you will see the details of the image</p>
+    <div id="gallery"></div>
 
-  <div class="hd-image-container" id="hd-image-container" style="display: none;">
-    <img id="hd-image" src="" alt="HD Image">
-    <p id="image-caption"></p>
-  </div>
+    <div id="modal" class="hidden">
+        <img id="modal-image" src="" alt="HD version">
+        <p id="modal-caption"></p>
+    </div>
 
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
